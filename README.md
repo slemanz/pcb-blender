@@ -53,3 +53,18 @@ the board is rendered over transparency (if we want).
 The render runs with **F12**, and the result is saved through Image -> Save As
 in the Render window.
 
+## Materials
+
+The materials/pcb_materials.blend file stores the default materials (Principled
+BSDF) for some components.
+
+To use goes in File -> Append -> pcb_materials.blend -> Material: select the
+materials (Ctrl+click for many) and confirm with Append. After that,  Material
+Properties (red sphere icon) -> Browse Material, assigns the appended material
+to the selected object.
+
+Append copies the material into the project, so it can be edited without
+changing the library, unlike Link, which keeps it tied to the source file.
+
+To clean unused materials, use File -> Clean Up -> Purge Unused Data.
+
