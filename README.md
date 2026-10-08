@@ -21,3 +21,17 @@ Cycles, and saving immediatealy with File -> Save As into the project folder.
 
 The board then can be imported through File -> Import -> PCB (.pcb3d). 
 
+#### Lights
+
+- Shift+A -> Light -> Area: adds an area light, best for soft.
+- Light properties (green bulb icon) -> Power and Size: large size = softer
+shadows and reflections.
+- R/G: rotate and move the selected light.
+- Object Constraints -> Track To (target: PCB): keeps a light or camera always
+aimed at the board.
+
+#### Camera
+
+- Shift+A -> Camera: adds a camera if the scene has none.
+- Numpad 0: camera view.
+- Ctrl+Alt+Numpad 0: snaps the camera to the current viewport.
