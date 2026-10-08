@@ -35,3 +35,21 @@ aimed at the board.
 - Shift+A -> Camera: adds a camera if the scene has none.
 - Numpad 0: camera view.
 - Ctrl+Alt+Numpad 0: snaps the camera to the current viewport.
+
+## Render Configurations
+
+All settings are did in Render Properties and Output Properties, if the computer
+has GPU, goes in Edit -> Preferences -> System -> Cycles Render Devices: select
+CUDA or OptiX, so the GPU will appear as an option.
+
+1. Render Properties -> Device: GPU compute.
+2. Render Properties -> Sampling -> Render -> Noise Threshold: 0.01 to 0.02 (0.03 for a
+faster render) and Max Samples: 5000, with Denoise enabled (and Use GPU).
+3. Render Properties -> Film -> Transparent: removes the world background, so
+the board is rendered over transparency (if we want).
+4. Output Properties -> Format: 1920 x 1080 at 300% (5760 x 3240).
+5. Output Properties -> Output: PNG, RGBA, 8 bits (RGBA keeps the transparency).
+
+The render runs with **F12**, and the result is saved through Image -> Save As
+in the Render window.
+
