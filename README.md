@@ -105,3 +105,29 @@ a board corner.
 are children of the PCB.
 
 ## Background
+
+Realistic surfaces come from Poly Haven (polyhaven.com -> Textures, CC0, free
+for any use), downloaded at 2k as a .blend package and kept in a shared assets
+folder outside the project.
+
+1. Shift+A -> Mesh -> Plane under the board, then File -> Append -> texture
+.blend -> Material: assigns the surface to the plane.
+2. Shader Editor -> Mapping -> Scale: 4 to 8, so the texture matches the board
+size.
+3. File -> External Data -> Pack Resources: embeds the textures in the .blend,
+so it opens anywhere without the external files.
+4. Numpad 1 (side view) and G Z: moves the plane up to the lowest point of the
+board, which is the board bottom for the top side, or the top of the tallest
+component when the board is flipped to show the bottom.
+
+## Compress and Resize
+
+The 5760 x 3240 PNG is too heavy to share (about 30 MB). Squoosh
+(squoosh.app, free, runs in the browser without uploading the image) compresses
+and resizes it with a side by side preview.
+
+1. Drag the PNG into squoosh.app.
+2. Resize: 1920 x 1080. Rendering at 300% and reducing afterwards gives sharper
+edges than rendering at 100%.
+3. Format: MozJPEG, Quality 85 to 90, which brings it to around 0.5 MB with no
+visible loss. For a transparent background, WebP keeps the transparency.
