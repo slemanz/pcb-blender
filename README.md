@@ -54,9 +54,10 @@ in the Render window.
 ## Materials
 
 The materials/pcb_materials.blend file stores the default materials (Principled
-BSDF) for ICs, diodes, LEDs, buttons, connectors, relays, capacitors and
-resistors, named by component prefix: IC_, DIO_, LED_, BTN_, CONN_, JST_,
-HDR_, RLY_, CAP_, ALU_, RES_ and RTH_.
+BSDF) for ICs, diodes, LEDs, buttons, connectors, relays, capacitors,
+resistors, crystals, inductors, trimpots, battery holders, modules and LCDs,
+named by component prefix: IC_, DIO_, LED_, BTN_, CONN_, JST_, HDR_, USB_,
+DCJ_, RLY_, CAP_, ALU_, RES_, RTH_, POT_, XTAL_, IND_, BAT_, MOD_ and LCD_.
 
 To use it, go to File -> Append -> pcb_materials.blend -> Material: select the
 materials (Ctrl+click for many) and confirm with Append. After that, Material
